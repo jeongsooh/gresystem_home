@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}제품 안내 | GRE System 비공용 완속충전기{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section style="padding: 8rem 5% 4rem; background: var(--bg-gray); text-align: center;">
+    <h1 style="color: var(--primary); font-size: 3rem; margin-bottom: 1rem;">스마트한 충전 라이프의 시작</h1>
+    <p style="color: #64748B; font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+        안전하고 편리한 가정용 충전기 라인업. 고객님의 설치 환경과 차량에 가장 적합한 모델을 선택해 보세요.
+    </p>
+</section>
+
+<!-- Products Showcase -->
+<section style="padding: 5rem 5%; background: white;">
+
+    <!-- Item 1: CP700P -->
+    <div
+        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 6rem; gap: 3rem;">
+        <div style="flex: 1; min-width: 300px; order: 1;">
+            <div
+                style="background: linear-gradient(135deg, #1e4570 0%, var(--primary) 100%); width: 100%; height: 350px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; color: white;">
+                <h3 style="font-size: 2rem;">CP700P (7kW)</h3>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px; order: 2;">
+            <span
+                style="display: inline-block; padding: 0.5rem 1rem; background: var(--bg-gray); color: var(--primary); border-radius: 50px; font-weight: bold; margin-bottom: 1rem;">Premium
+                Model</span>
+            <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">차세대 스마트 AC 완속충전기</h2>
+            <p style="color: #4A5568; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                PLC 모뎀 탑재로 ISO 15118-2 기반의 스마트 충전을 완벽하게 지원하는 최고급 라인업입니다. 최신 전기차와의 뛰어난 호환성과 안정성을 자랑합니다.
+            </p>
+            <ul style="list-style: none; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 7kW AC 충전 지원</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ ISO 15118-2 PnC(Plug & Charge) 호환 설계</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 차세대 전력망 연동 기능 내장</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Item 2: CP700 -->
+    <div
+        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 6rem; gap: 3rem;">
+        <div style="flex: 1; min-width: 300px; order: 2;">
+            <div
+                style="background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); width: 100%; height: 350px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <h3 style="font-size: 2rem;">CP700 (7kW)</h3>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px; order: 1;">
+            <span
+                style="display: inline-block; padding: 0.5rem 1rem; background: var(--secondary); color: white; border-radius: 50px; font-weight: bold; margin-bottom: 1rem;">Bestseller</span>
+            <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">가장 대중적인 스탠다드 충전기</h2>
+            <p style="color: #4A5568; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                단독주택 및 펜션 등에서 가장 많이 선택하는 7kW 스탠다드 모델입니다. 직관적인 조작과 검증된 내구성으로 누구나 쉽게 사용할 수 있습니다.
+            </p>
+            <ul style="list-style: none; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ CCS PWM 시그널링 지원</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 초정밀 전력 계량 기능 포함</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 벽걸이(Wallbox) 및 스탠드 형태 지원</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Item 3: CP100 -->
+    <div
+        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 2rem; gap: 3rem;">
+        <div style="flex: 1; min-width: 300px; order: 1;">
+            <div
+                style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); width: 100%; height: 350px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                <h3 style="font-size: 2rem;">CP100 (3.5kW)</h3>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px; order: 2;">
+            <span
+                style="display: inline-block; padding: 0.5rem 1rem; background: #64748b; color: white; border-radius: 50px; font-weight: bold; margin-bottom: 1rem;">Compact</span>
+            <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">공간 활용성을 극대화한 콘센트형</h2>
+            <p style="color: #4A5568; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                주차 면적이 좁거나 기존 전력망의 증설이 부담스러운 환경에 최적화된 3.5kW 모델입니다. 전국 5,000기 이상의 설치로 검증되었습니다.
+            </p>
+            <ul style="list-style: none; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 3.5kW EV 전용 콘센트 형</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 스마트 원격 On/Off 제어</li>
+                <li style="margin-bottom: 0.5rem; color: #1e4570;">✓ 협소한 주차장 기둥 최적화 설치</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- Call to Action Banner -->
+<section style="background: linear-gradient(135deg, var(--bg-gray), #E2E8F0); padding: 5rem 5%; text-align: center;">
+    <h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 1.5rem;">설치 환경에 대한 확인이 필요하신가요?</h2>
+    <p style="color: #4A5568; font-size: 1.2rem; margin-bottom: 2rem;">한전 불입금, 전기 공사 비용, 보조금 여부 등 알기 어려운 부분들을 전문가가 직접
+        안내해 드립니다.</p>
+    <a href="{% url 'leads:contact' %}" class="btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">무료 맞춤형 컨설팅
+        신청</a>
+</section>
+
+{% endblock %}

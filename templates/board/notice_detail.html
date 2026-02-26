@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}공지사항 상세 | {{ notice.title }}{% endblock %}
+
+{% block content %}
+<section style="padding: 8rem 5% 4rem; background: var(--bg-gray); text-align: center;">
+    <h1 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 1rem; max-width: 800px; margin: 0 auto;">{{ notice.title }}</h1>
+    <p style="color: #64748B; font-size: 1.1rem; margin-top: 1rem;">등록일: {{ notice.created_at|date:"Y-m-d H:i" }}</p>
+</section>
+
+<section style="padding: 4rem 5%; background: white;">
+    <div
+        style="max-width: 800px; margin: 0 auto; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); min-height: 400px; line-height: 1.8; color: var(--text-dark); white-space: pre-line;">
+        {{ notice.content }}
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="{% url 'board:notice_list' %}" class="btn-primary" style="padding: 1rem 3rem;">목록으로 돌아가기</a>
+    </div>
+</section>
+{% endblock %}

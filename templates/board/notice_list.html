@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}고객 지원 | 공지사항{% endblock %}
+
+{% block content %}
+<section style="padding: 8rem 5% 4rem; background: var(--bg-gray); text-align: center;">
+    <h1 style="color: var(--primary); font-size: 3rem; margin-bottom: 1rem;">고객 지원</h1>
+    <p style="color: #64748B; font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+        지알이시스템의 새로운 소식과 주요 공지사항을 안내해 드립니다.
+    </p>
+</section>
+
+<section style="padding: 4rem 5%; background: white;">
+    <div style="max-width: 900px; margin: 0 auto;">
+
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+                <tr style="border-bottom: 2px solid var(--primary); background: var(--bg-gray);">
+                    <th style="padding: 1.5rem 1rem; color: var(--text-dark); font-weight: bold; width: 10%;">번호</th>
+                    <th style="padding: 1.5rem 1rem; color: var(--text-dark); font-weight: bold; width: 65%;">제목</th>
+                    <th
+                        style="padding: 1.5rem 1rem; color: var(--text-dark); font-weight: bold; width: 25%; text-align: center;">
+                        등록일</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for notice in notices %}
+                <tr style="border-bottom: 1px solid var(--border-color); transition: var(--transition);"
+                    onmouseover="this.style.backgroundColor='#F0FdfA'"
+                    onmouseout="this.style.backgroundColor='transparent'">
+                    <td style="padding: 1.5rem 1rem; color: #64748B;">{{ forloop.counter }}</td>
+                    <td style="padding: 1.5rem 1rem;">
+                        <a href="{% url 'board:notice_detail' notice.pk %}"
+                            style="color: var(--text-dark); font-weight: 500; display: block;">{{ notice.title }}</a>
+                    </td>
+                    <td style="padding: 1.5rem 1rem; color: #64748B; text-align: center;">{{ notice.created_at|date:"Y-m-d" }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="3" style="padding: 3rem; text-align: center; color: #64748B;">등록된 공지사항이 없습니다.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+# Python / Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# SQLite Database
+db.sqlite3
+db.sqlite3-journal
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Static / Media folders
+# 코드를 그대로 배포해야 하므로 기본 static 폴더는 제외하지 않습니다.
+# 배포 시 staticfiles로 collectstatic되는 폴더만 제외합니다.
+staticfiles/
+media/
+
+# Secrets
+.env
+secret.json
